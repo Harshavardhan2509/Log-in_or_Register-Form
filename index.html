@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in or Registration </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="log-or-reg">
+            <div class="inner-box" id="card">
+                <div class="log">
+                    <h1>LOGIN</h1>
+                    <form >
+                        <input type="email" class="text-input" placeholder="Enter your email" required>
+                        <input type="password" class="text-input" placeholder="Enter your password" required>
+                        <button type="submit" class="btn-s">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>          
+                    <button type="button" class="btn" onclick="openReg()">Not Yet? Register</button>
+                    <a href="">Forgot Password</a>
+                    <h2>Welcome Back</h2>
+                    <h3>Let's see what we have prepared for you.</h3>
+
+                </div>
+                <div class="reg">
+                    <h1>Register</h1>
+                    <form >
+                        <input type="text" class="text-input" placeholder="Enter your name" required>
+                        <input type="email" class="text-input" placeholder="Enter your email" required>
+                        <input type="password" class="text-input" placeholder="Enter your password" required>
+                        <button type="submit" class="btn-s">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>          
+                    <button type="button" class="btn" onclick="openLog()">Have an account?  LOGIN</button>
+                    <h2>Welcome </h2>
+                    <h3>Register to get in touch with us.</h3>                        
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var card=document.getElementById("card");
+        function openReg(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLog(){
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+</body>
+</html>
